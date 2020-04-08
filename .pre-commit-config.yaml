@@ -34,11 +34,11 @@ exclude: |
 default_language_version:
   python: python2.7
 repos:
-  - repo: https://github.com/psf/black
-    rev: stable
-    hooks:
-      - id: black
-        language_version: python2.7
+#   - repo: https://github.com/psf/black
+#     rev: stable
+#     hooks:
+#       - id: black
+#         language_version: python2.7
   - repo: https://github.com/prettier/prettier
     rev: "1.19.1"
     hooks:
