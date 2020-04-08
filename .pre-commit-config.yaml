@@ -35,13 +35,15 @@ default_language_version:
   python: python2.7
 repos:
   - repo: https://github.com/psf/black
-    rev: 19.3b0
+    rev: stable
     hooks:
       - id: black
+        language_version: python2.7
   - repo: https://github.com/prettier/prettier
     rev: "1.19.1"
     hooks:
       - id: prettier
+      
   # TODO Avoid awebdeveloper/pre-commit-prettier if possible
   # HACK https://github.com/prettier/prettier/issues/7407
   # - repo: https://github.com/awebdeveloper/pre-commit-prettier
