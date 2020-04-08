@@ -203,18 +203,18 @@ repos:
       - id: check-xml
       - id: mixed-line-ending
         args: ["--fix=lf"]
-  - repo: https://github.com/pre-commit/mirrors-pylint
-    rev: stable
-    hooks:
-      - id: pylint
-        name: pylint with optional checks
-        args: ["--rcfile=.pylintrc", "--exit-zero"]
-        verbose: true
-        additional_dependencies: ["pylint-odoo==1.9.3"]
-      - id: pylint
-        name: pylint with mandatory checks
-        args: ["--rcfile=.pylintrc-mandatory"]
-        additional_dependencies: ["pylint-odoo==1.9.3"]
+#   - repo: https://github.com/pre-commit/mirrors-pylint
+#     rev: stable
+#     hooks:
+#       - id: pylint
+#         name: pylint with optional checks
+#         args: ["--rcfile=.pylintrc", "--exit-zero"]
+#         verbose: true
+#         additional_dependencies: ["pylint-odoo==1.9.3"]
+#       - id: pylint
+#         name: pylint with mandatory checks
+#         args: ["--rcfile=.pylintrc-mandatory"]
+#         additional_dependencies: ["pylint-odoo==1.9.3"]
   - repo: https://github.com/asottile/pyupgrade
     rev: v1.26.2
     hooks:
