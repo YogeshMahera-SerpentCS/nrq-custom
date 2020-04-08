@@ -187,12 +187,12 @@ repos:
       - id: flake8
         name: flake8 except __init__.py
         exclude: /__init__\.py$
-        additional_dependencies: ["flake8-bugbear"]
+#         additional_dependencies: ["flake8-bugbear"]
       - id: flake8
         name: flake8 only __init__.py
         args: ["--extend-ignore=F401"] # ignore unused imports in __init__.py
         files: /__init__\.py$
-        additional_dependencies: ["flake8-bugbear"]
+#         additional_dependencies: ["flake8-bugbear"]
       - id: fix-encoding-pragma
         args: ["--remove"]
       - id: check-case-conflict
