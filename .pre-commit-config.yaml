@@ -187,12 +187,12 @@ repos:
       - id: flake8
         name: flake8 except __init__.py
         exclude: /__init__\.py$
-#         additional_dependencies: ["flake8-bugbear==16.11.0"]
+        additional_dependencies: ["flake8-bugbear"]
       - id: flake8
         name: flake8 only __init__.py
         args: ["--extend-ignore=F401"] # ignore unused imports in __init__.py
         files: /__init__\.py$
-#         additional_dependencies: ["flake8-bugbear==19.8.0"]
+        additional_dependencies: ["flake8-bugbear"]
       - id: fix-encoding-pragma
         args: ["--remove"]
       - id: check-case-conflict
@@ -210,11 +210,11 @@ repos:
         name: pylint with optional checks
         args: ["--rcfile=.pylintrc", "--exit-zero"]
         verbose: true
-        additional_dependencies: ["pylint-odoo==3.0.3"]
+        additional_dependencies: ["pylint-odoo"]
       - id: pylint
         name: pylint with mandatory checks
         args: ["--rcfile=.pylintrc-mandatory"]
-        additional_dependencies: ["pylint-odoo==3.0.3"]
+        additional_dependencies: ["pylint-odoo"]
   - repo: https://github.com/asottile/pyupgrade
     rev: v1.26.2
     hooks:
